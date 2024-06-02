@@ -65,4 +65,23 @@ https://sepolia.etherscan.io/tx/0x5b786cd2a4d03cf7289c680bed491bcfbf25bd1416a143
 13. Shijin setText to "Shijin is the owner". 
 
 https://sepolia.etherscan.io/tx/0xe2ce3df3787f294af84558446e86dc6effa661054473a5985abc55ed57229869
+
+
+14. Kevin accessed Remix, navigating to “Deploy & Run Transactions”
+    
+15. Connected his Metamask Account (`0x4B69582aFf15fee68c0f633d17F14D09aDf8deB2`) with Remix
+    
+16. Then added the Contract that Adrian had deployed (`0x089d2927a6ae42fc657cdfd9fc681e9c31d55d42`) to “At Address” to load the contract
+    
+17. Starting with 0.25 sETH, the first function Kevin interacted with was the helloWorld function which returned the string: “Shijin is the owner.”
+    
+18. When clicking on the “owner” button within the Remix UI, the following address is shown as the current contract owner: `0xd1B41bE30F980315b8A6b754754aAa299C7abea2`
+    
+19. When Kevin adds a string of “Kevin wants to be the owner” and clicks on the “setText” button, there is a modal pop-up within Remix that provides a message that the transaction will likely fail. After going ahead and forcing the transaction anyways, it was noted that the transaction has failed because the “Caller is not the owner” 
+
+https://sepolia.etherscan.io/tx/0xb0e88a5167649274cadc89e573b27b49cddd157baf1605a8d945dd6a19ee1f71
+
+20. Similarly, when attempting to change the ownership from the current contract owner to Kevin’s account via the Transfer Ownership function, a similar behaviour and return message was displayed, as was in the previous step. 
+  
+https://sepolia.etherscan.io/tx/0x4975af74fc917060331b9e423f4f9460afaff019d722fc57699e4e8a0151b103
   
